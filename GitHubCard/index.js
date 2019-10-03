@@ -7,6 +7,9 @@ axios
   .get(" https://api.github.com/users/chelsabeth")
   .then(response => {
     console.log("Github User Data", response.data);
+    const card = userCard(response.data); //HTML Div Element
+    const cards = document.querySelector(".cards");
+    cards.appendChild(card);
   })
   .catch(error => {
     console.log("Sorry, an error has occured", error);
@@ -90,7 +93,7 @@ function userCard(data) {
   username.classList.add("username");
 
   // Assign elements to github data
-  cardImg.src = ["avatar_url"];
+  cardImg.src = `${data.avatar_url}`;
   name.textContent = `Name: ${data.name}`;
   username.textContent = `Username: ${data.login}`;
   location.textContent = `Location: ${data.location}`;
@@ -98,6 +101,8 @@ function userCard(data) {
   followers.textContent = `Followers: ${data.followers}`;
   following.textContent = `Following: ${data.following}`;
   bio.textContent = `Bio: ${data.bio}`;
+
+  return newCard;
 }
 
 /* List of LS Instructors Github username's: 
