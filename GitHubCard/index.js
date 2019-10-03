@@ -58,10 +58,19 @@ const followersArray = [];
 
 function userCard(data) {
   console.log("data:", data)
-
   const 
   newCard = document.createElement("div"),
   cardImg = document.createElement("img"),
+  cardInfo = document.createElement("div"),
+  name = document.createElement("h3"),
+  username = document.createElement("p"),
+  location = document.createElement("p"),
+  profile = document.createElement("p"),
+  profileLink = document.createElement("a"),
+  followers = document.createElement("p"),
+  following = document.createElement("p"),
+  bio = document.createElement("p")
+
   
 }
 
