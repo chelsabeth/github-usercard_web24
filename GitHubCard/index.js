@@ -56,6 +56,15 @@ const followersArray = [];
 
 */
 
+function userCard(data) {
+  console.log("data:", data)
+
+  const 
+  newCard = document.createElement("div"),
+  cardImg = document.createElement("img"),
+  
+}
+
 /* List of LS Instructors Github username's: 
   tetondan
   dustinmyers
