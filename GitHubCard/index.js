@@ -71,7 +71,17 @@ function userCard(data) {
   following = document.createElement("p"),
   bio = document.createElement("p")
 
-  
+  // Setup the structure
+  newCard.appendChild(cardImg);
+  newCard.appendChild(cardInfo);
+  cardInfo.appendChild(name);
+  cardInfo.appendChild(username);
+  cardInfo.appendChild(location);
+  cardInfo.appendChild(profile);
+  profile.appendChild(profileLink);
+  cardInfo.appendChild(followers);
+  cardInfo.appendChild(following);
+  cardInfo.appendChild(bio);
 }
 
 /* List of LS Instructors Github username's: 
