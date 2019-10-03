@@ -6,7 +6,7 @@
 axios
   .get(" https://api.github.com/users/chelsabeth")
   .then(response => {
-    console.log("Github Data", response);
+    console.log("Github User Data", response.data);
   })
   .catch(error => {
     console.log("Sorry, an error has occured", error);
@@ -88,7 +88,16 @@ function userCard(data) {
   cardInfo.classList.add("card-info");
   name.classList.add("name");
   username.classList.add("username");
-  
+
+  // Assign elements to github data
+  cardImg.src = ["avatar_url"];
+  name.textContent = `Name: ${data.name}`;
+  username.textContent = `Username: ${data.login}`;
+  location.textContent = `Location: ${data.location}`;
+  profileLink.textContent = `Link to Profile: ${data.url}`;
+  followers.textContent = `Followers: ${data.followers}`;
+  following.textContent = `Following: ${data.following}`;
+  bio.textContent = `Bio: ${data.bio}`;
 }
 
 /* List of LS Instructors Github username's: 
