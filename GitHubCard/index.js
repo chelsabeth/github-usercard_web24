@@ -7,8 +7,8 @@ axios
   .get(" https://api.github.com/users/chelsabeth")
   .then(response => {
     console.log("Github User Data", response.data);
-    const card = userCard(response.data); //HTML Div Element
-    const cards = document.querySelector(".cards");
+    const card = userCard(response.data); // HTML Div Element
+    const cards = document.querySelector(".cards"); // cards is now equal to cards div in HTML
     cards.appendChild(card);
   })
   .catch(error => {
