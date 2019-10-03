@@ -82,6 +82,13 @@ function userCard(data) {
   cardInfo.appendChild(followers);
   cardInfo.appendChild(following);
   cardInfo.appendChild(bio);
+
+  // Setup class names
+  newCard.classList.add("card");
+  cardInfo.classList.add("card-info");
+  name.classList.add("name");
+  username.classList.add("username");
+  
 }
 
 /* List of LS Instructors Github username's: 
