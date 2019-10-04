@@ -24,20 +24,7 @@ function parseUser(user) {
   .catch(error => {
     console.log("Sorry, an error has occured", error);
   });
-  // return userCard(response.data); // HTML Div Element
-}
-
-  // .get(" https://api.github.com/users/chelsabeth")
-  // .then(response => {
-  //   console.log("Github User Data", response.data);
-  //   const card = userCard(response.data); // HTML Div Element
-  //   const cards = document.querySelector(".cards"); // cards is now equal to cards div in HTML
-  //   cards.appendChild(card);
-  // })
-  // .catch(error => {
-  //   console.log("Sorry, an error has occured", error);
-  // });
-  
+}  
 
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
